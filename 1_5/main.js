@@ -1,5 +1,5 @@
 const fs = require("fs");
-const userDataFile = "./user-data.json";
+const userDataFile = "./1_5/user-data.json";
 let userData = fs
 	.readFileSync(userDataFile, (err) => console.log("err", err))
 	.toString();
