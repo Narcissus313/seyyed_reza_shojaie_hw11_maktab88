@@ -4,7 +4,8 @@ let userData = fs
 	.readFileSync(userDataFile, (err) => console.log("err", err))
 	.toString();
 userData = JSON.parse(userData);
-userData.map((user) => {
+
+userData.forEach((user) => {
 	if (user.age >= 18) {
 		console.log(user);
 	}
